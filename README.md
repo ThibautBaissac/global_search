@@ -1,6 +1,6 @@
 # GLOBAL SEARCH
 
-A simple yet powerful search example accross multiple models using Rails 7, pg_search and Stimulus Search.
+A simple yet powerful search example (accross multiple models) using Rails 7, pg_search and Stimulus Autocomplete.
 
 1. In action
 2. Sack
@@ -11,9 +11,8 @@ A simple yet powerful search example accross multiple models using Rails 7, pg_s
 
 ## 2. Stack
 - Rails 7
-- Bootstrap 5
 - pg_search
-- Stimulus Search
+- Stimulus Autocomplete
 
 ## 3. Quick Start
 
