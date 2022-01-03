@@ -1,2 +1,11 @@
-<h1>Directors#index</h1>
-<p>Find me in app/views/directors/index.html.erb</p>
+<p style="color: green"><%= notice %></p>
+
+<h1>Directors</h1>
+
+<div id="directors">
+  <% @directors.each do |director| %>
+    <%= render director %>
+    <p><%= link_to "Show this director", director %></p>
+    <hr>
+  <% end %>
+</div>
