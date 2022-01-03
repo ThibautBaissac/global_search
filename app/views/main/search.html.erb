@@ -1,0 +1,22 @@
+<h1>Search results</h1>
+Search Results for "<%= params[:q] %>"
+
+<hr>
+<h4>MOVIES</h4>
+<ul>
+  <% @movies.each do |movie| %>
+    <li>
+      <%= link_to movie.title, movie %> -
+      <%= movie.description %>
+    </li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h4>DIRECTORS</h4>
+<ul>
+  <% @directors.each do |director| %>
+    <li><%= link_to director.name, director %></li>
+  <% end %>
+</ul>
