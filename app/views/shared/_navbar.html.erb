@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to "SEARCH", root_path, class: "navbar-brand"%>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to "Movies", movies_path, class: "nav-link active"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Directors", directors_path, class: "nav-link" %>
+        </li>
+      </ul>
+      <%= form_with url: search_path, local: true, method: :get, html: { class: "d-flex" } do |form| %>
+        <div data-controller="autocomplete" data-autocomplete-url-value="/autocomplete" class="autocomplete-div">
+        <%= form.text_field :q, placeholder: "Search", value: params[:q], class: "form-control me-2", data: {autocomplete_target: "input"}%>
+          <ul data-autocomplete-target="results" class="autocomplete-ul"></ul>
+      </div>
+        <%= form.button "Search", class: "btn btn-outline-success" %>
+      <% end %>
+    </div>
+  </div>
+</nav>
