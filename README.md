@@ -1,24 +1,46 @@
-# README
+# DATATABLE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple yet powerful search example accross multiple models using Rails 7, pg_search and Stimulus Search.
 
-Things you may want to cover:
+1. In action
+2. Sack
+3. Quickstart
 
-* Ruby version
+## 1. In action
+![global_search](https://user-images.githubusercontent.com/59996803/147934105-128273cf-43d6-4350-8708-efcb06fb205d.gif)
 
-* System dependencies
+## 2. Stack
+- Rails 7
+- Bootstrap 5
+- pg_search
+- Stimulus Search
 
-* Configuration
+## 3. Quick Start
 
-* Database creation
+1. Install Rails 7
+  ```bash
+  gem install rails
+  ```
 
-* Database initialization
+2. Clone
+  ```bash
+  git@github.com:ThibautBaissac/datatable.git
+  ```
 
-* How to run the test suite
+3. Bundle & yarn install
+  ```bash
+  bundle
+  yarn install
+  ```
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Run rails db commands
+  ```bash
+  rails db:create
+  rails db:migrate
+  rails db:seed
+  ```
 
-* Deployment instructions
-
-* ...
+5. Run rails server
+  ```bash
+  ./bin/dev
+  ```
