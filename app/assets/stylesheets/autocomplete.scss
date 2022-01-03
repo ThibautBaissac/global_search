@@ -1,0 +1,12 @@
+.autocomplete-div {
+  position: relative;
+}
+
+.autocomplete-ul {
+  padding: 10px ;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 10px 10px;
+  position: absolute;
+  z-index: 1000;
+}

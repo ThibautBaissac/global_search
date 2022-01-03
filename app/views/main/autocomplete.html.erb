@@ -1,0 +1,15 @@
+<h6>MOVIES</h6>
+<ul class="list-group">
+  <% @movies.each do |movie| %>
+    <li class="list-group-item"><%= link_to movie.title, movie %></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h6>DIRECTORS</h6>
+<ul class="list-group">
+  <% @directors.each do |director| %>
+    <li class="list-group-item"><%= link_to director.name, director %></li>
+  <% end %>
+</ul>
