@@ -1,4 +1,4 @@
-# DATATABLE
+# GLOBAL SEARCH
 
 A simple yet powerful search example accross multiple models using Rails 7, pg_search and Stimulus Search.
 
