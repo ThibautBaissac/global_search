@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Directors</h1>
+
+<div id="directors">
+  <% @directors.each do |director| %>
+    <%= render director %>
+    <p><%= link_to "Show this director", director %></p>
+    <hr>
+  <% end %>
+</div>
